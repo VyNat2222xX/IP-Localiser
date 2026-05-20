@@ -6,6 +6,7 @@ const $IPadresseSpan = document.querySelector("#ip-address-value");
 
 // Formulaire
 const $form = document.querySelector(".ip-address-form");
+const $inputIP = document.querySelector(".ip-address-input");
 
 document.addEventListener("DOMContentLoaded", () => {
 	$IPadresseSpan.textContent = "???";
@@ -16,4 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 $form.addEventListener("submit", (e) => {
 	e.preventDefault();
+
+	console.log($inputIP.value);
 });
